@@ -25,6 +25,9 @@ a {
 	margin: 0;
 	padding: 0;
 }
+.block {
+	display: block;
+}
 
 .logo {
 	font-family: "Raleway", sans-serif;
@@ -238,6 +241,9 @@ a {
 .social-list {
 	margin-top: 20px;
 }
+.social-list-item:not(:last-child) {
+	margin-right: 10px;
+}
 .join-in {
 	font-weight: bold;
 	font-size: 14px;
@@ -251,10 +257,14 @@ a {
 }
 
 /* portfolio */
+
 .portfolio-nav {
 	padding-top: 93px;
-	text-align: center;
 	margin-bottom: 50px;
+	justify-content: center;
+}
+.portfolio-nav-item:not(:last-child) {
+	margin-right: 10px;
 }
 .btn {
 	font-family: "Roboto";
@@ -273,9 +283,14 @@ a {
 }
 .examples {
 	flex-wrap: wrap;
+	padding-bottom: 95px;
 }
 .example-item {
-	width: calc((100%-60px) / 3);
+	width: calc((100% - 60px) / 3);
+	margin-right: 30px;
+}
+.example-item:nth-child(-n + 6) {
+	margin-bottom: 30px;
 }
 .example-item:nth-child(3n) {
 	margin-right: 0;
@@ -286,12 +301,12 @@ a {
 	line-height: 2;
 	letter-spacing: 0.06em;
 	color: #212121;
+	margin: 20px 0 5px 0;
 }
 .example-description {
 	font-size: 16px;
 	line-height: 1.875;
-
 	letter-spacing: 0.03em;
-
 	color: #757575;
+	margin: 0;
 }
