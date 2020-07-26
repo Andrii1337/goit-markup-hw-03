@@ -1,3 +1,6 @@
+* {
+	box-sizing: border-box;
+}
 body {
 	font-family: "Roboto", sans-serif;
 }
@@ -8,13 +11,14 @@ a {
 }
 
 .container {
-	width: 1170px;
+	width: 1200px;
 	padding-left: 15px;
 	padding-right: 15px;
 	margin-left: auto;
 	margin-right: auto;
 }
 .section {
+	padding-top: 95px;
 	padding-bottom: 95px;
 }
 .flexbox {
@@ -88,8 +92,8 @@ a {
 
 .hero {
 	background-color: #757575;
-	text-align: center;
 }
+
 .hero-title {
 	font-weight: 900;
 	font-size: 44px;
@@ -98,6 +102,12 @@ a {
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
 	color: #ffffff;
+	margin: 0;
+	margin-bottom: 30px;
+}
+.hero-but {
+	display: flex;
+	justify-content: center;
 }
 .order {
 	background-color: #2196f3;
@@ -107,6 +117,9 @@ a {
 	letter-spacing: 0.06em;
 	color: #ffffff;
 	font-weight: bold;
+	display: block;
+	width: 200px;
+	text-align: center;
 }
 
 .title-section {
@@ -116,11 +129,12 @@ a {
 	text-align: center;
 	letter-spacing: 0.03em;
 	color: #212121;
-	padding-bottom: 50px;
+	margin-bottom: 50px;
 	margin: 0;
+	margin-bottom: 50px;
 }
-.features {
-	padding: 94px 0;
+.section-features {
+	padding-bottom: 0;
 }
 .features-item {
 	width: calc((100%-90px) / 4);
@@ -159,12 +173,10 @@ a {
 	text-align: center;
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
+	margin: 0;
 }
 .gray {
 	background: #f5f4fa;
-}
-.comand-title {
-	padding-top: 95px;
 }
 .comand {
 	text-align: center;
@@ -195,9 +207,11 @@ a {
 	color: #757575;
 	margin: 10px 0 15px 0;
 }
-.clients-title {
-	padding-top: 95px;
+.comand-social {
+	display: flex;
+	justify-content: center;
 }
+
 .clients-item {
 	width: calc((100%-150px) / 6);
 }
@@ -206,6 +220,7 @@ a {
 }
 .footer-bg {
 	background: #2f303a;
+	padding-bottom: 60px;
 }
 .footer-left-side {
 	padding-top: 60px;
@@ -257,9 +272,10 @@ a {
 }
 
 /* portfolio */
-
+.portfolio-header {
+	border-bottom: 1px solid #eeeeee;
+}
 .portfolio-nav {
-	padding-top: 93px;
 	margin-bottom: 50px;
 	justify-content: center;
 }
@@ -275,6 +291,7 @@ a {
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.625;
+	padding: 6px 22px;
 }
 .btn:hover,
 .btn:focus {
@@ -283,11 +300,11 @@ a {
 }
 .examples {
 	flex-wrap: wrap;
-	padding-bottom: 95px;
 }
 .example-item {
 	width: calc((100% - 60px) / 3);
 	margin-right: 30px;
+	border: 1px solid #eeeeee;
 }
 .example-item:nth-child(-n + 6) {
 	margin-bottom: 30px;
@@ -295,13 +312,14 @@ a {
 .example-item:nth-child(3n) {
 	margin-right: 0;
 }
+
 .example-title {
 	font-weight: bold;
 	font-size: 18px;
 	line-height: 2;
 	letter-spacing: 0.06em;
 	color: #212121;
-	margin: 20px 0 5px 0;
+	margin: 0 0 5px 0;
 }
 .example-description {
 	font-size: 16px;
@@ -309,4 +327,7 @@ a {
 	letter-spacing: 0.03em;
 	color: #757575;
 	margin: 0;
+}
+.examples-card-correct {
+	margin: 20px 0 20px 25px;
 }
