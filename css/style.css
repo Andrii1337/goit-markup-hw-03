@@ -156,6 +156,7 @@ a {
 	line-height: 1.714;
 	letter-spacing: 0.03em;
 	color: #757575;
+	margin: 0;
 }
 .what-doing-item {
 	width: calc((100%-60px) / 3);
@@ -198,22 +199,27 @@ a {
 	letter-spacing: 0.03em;
 	color: #212121;
 	margin-top: 30px;
-	margin-bottom: 0;
+	margin-bottom: 10px;
 }
 .comand-work {
 	font-size: 16px;
 	line-height: 1.187;
 	letter-spacing: 0.03em;
 	color: #757575;
-	margin: 10px 0 15px 0;
+	margin: 0 0 15px 0;
 }
 .comand-social {
 	display: flex;
 	justify-content: center;
+	margin-bottom: 25px;
 }
 
 .clients-item {
-	width: calc((100%-150px) / 6);
+	width: calc((100% - 150px) / 6);
+	border: 1px solid #afb1b8;
+	text-align: center;
+	padding: 20px 65px;
+	margin: 0;
 }
 .clients-item:not(:last-child) {
 	margin-right: 30px;
@@ -224,6 +230,7 @@ a {
 }
 .footer-left-side {
 	padding-top: 60px;
+	width: calc(25% - 30px);
 	margin-right: 30px;
 }
 .white-logo {
@@ -252,6 +259,8 @@ a {
 }
 .social-link {
 	padding-top: 72px;
+	width: calc(25% - 30px);
+	margin-right: 30px;
 }
 .social-list {
 	margin-top: 20px;
@@ -269,6 +278,17 @@ a {
 }
 .ftr-social {
 	color: #ffffff;
+}
+.subscribe-email {
+	padding-top: 72px;
+	width: 50%;
+}
+.subscribe {
+	color: #ffffff;
+	font-size: 14px;
+	line-height: 1.142;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
 }
 
 /* portfolio */
@@ -304,7 +324,8 @@ a {
 .example-item {
 	width: calc((100% - 60px) / 3);
 	margin-right: 30px;
-	border: 1px solid #eeeeee;
+	outline: 1px solid #eeeeee;
+	display: block;
 }
 .example-item:nth-child(-n + 6) {
 	margin-bottom: 30px;
