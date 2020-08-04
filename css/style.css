@@ -39,6 +39,8 @@ a {
 	font-size: 26px;
 	line-height: 1.192;
 	letter-spacing: 0.03em;
+}
+.header-logo {
 	padding: 25px 85px 25px 0;
 }
 .web-logo {
@@ -186,6 +188,7 @@ a {
 	width: calc((100%-90px) / 4);
 	flex-wrap: wrap;
 	background: #ffffff;
+	padding-bottom: 25px;
 	margin-right: 30px;
 }
 .comand-item:nth-child(4n) {
@@ -211,7 +214,6 @@ a {
 .comand-social {
 	display: flex;
 	justify-content: center;
-	margin-bottom: 25px;
 }
 
 .clients-item {
@@ -231,7 +233,7 @@ a {
 .footer-left-side {
 	padding-top: 60px;
 	width: calc(25% - 30px);
-	margin-right: 30px;
+	padding-right: 30px;
 }
 .white-logo {
 	color: #ffffff;
@@ -260,7 +262,7 @@ a {
 .social-link {
 	padding-top: 72px;
 	width: calc(25% - 30px);
-	margin-right: 30px;
+	padding-right: 30px;
 }
 .social-list {
 	margin-top: 20px;
