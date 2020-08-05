@@ -335,7 +335,6 @@ a {
 .example-item:nth-child(3n) {
 	margin-right: 0;
 }
-
 .example-title {
 	font-weight: bold;
 	font-size: 18px;
